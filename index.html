@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" href="/favicon.ico">
+  <link href="/swiper-bundle.min.css" rel="stylesheet">
+  <title>小说客同步学</title>
+  <meta name="keywords" content="英语 语文 数学 同步学 计划学">
+  <meta name="description" content="小说客同步学是将传统教育与数字技术完美融合的学习伙伴，为中小学阶段的学生提供全科高效普惠的名师教学服务，支持同步学、计划学、专项提升等优质内容。">
+  <!--[if lt IE 11]>
+  <script>window.location.href = '/html/ie.html';</script><![endif]-->
+  <style>
+      html, body, #app {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+      }
+  </style>
+  <script>
+    var _hmt = _hmt || []
+
+    function isPC() {
+      let u = navigator.userAgent
+      let Agents = ['Android', 'iPhone', 'webOS', 'BlackBerry', 'SymbianOS', 'Windows Phone', 'iPad', 'iPod']
+      let flag = true
+      for (let i = 0; i < Agents.length; i++) {
+        if (u.indexOf(Agents[i]) > 0) {
+          flag = false
+          break
+        }
+      }
+      return flag
+    }
+
+    if (!isPC()) {
+      if (window.location.pathname === '/') {
+        window.location.href = window.origin + '/h5'
+      }
+    }
+  </script>
+</head>
+
+<body>
+<div id="app"></div>
+<script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
